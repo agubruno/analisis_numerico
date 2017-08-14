@@ -1,0 +1,7 @@
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\Projecto raices\Entidades\Entidades\bin\Debug\Entidades.dll
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\Projecto raices\Entidades\Entidades\bin\Debug\Entidades.pdb
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\Projecto raices\Entidades\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\Projecto raices\Entidades\Entidades\obj\Debug\Entidades.dll
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\Projecto raices\Entidades\Entidades\obj\Debug\Entidades.pdb
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\Projecto raices\Entidades\Entidades\bin\Debug\Entidades.dll.CodeAnalysisLog.xml
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\Projecto raices\Entidades\Entidades\bin\Debug\Entidades.dll.lastcodeanalysissucceeded
