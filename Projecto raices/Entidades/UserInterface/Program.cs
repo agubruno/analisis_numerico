@@ -1,4 +1,4 @@
-﻿using Entidades;
+﻿using Entidades.Logica;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +15,7 @@ namespace UserInterface
         [STAThread]
         static void Main()
         {
-            Raiz nuevaRaiz = new Raiz(); 
+            Raiz nuevaRaiz = new Raiz();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
