@@ -21,12 +21,12 @@ namespace Entidades.Logica
 
             double doble = 0;
 
-            doble = (x * x) - 2;
+            doble = (x * x) - 4;
 
             return doble;
         }
 
-        public ResultadoRaiz CalcularRaizBiseccion (double xi, double xd, int iteracciones, int error, int tole)
+        public ResultadoRaiz CalcularRaizBiseccion (double xi, double xd, int iteracciones, double tole)
         {
             double er = 0;
             ResultadoRaiz resultado = new ResultadoRaiz();
@@ -53,15 +53,18 @@ namespace Entidades.Logica
 
             if (multiplicacion > 0)
             {
-                //TO DO -> VEMOS QUE HACER
+                throw new Exception("No hay raiz entre estas dos variables"); 
             }
 
             if (multiplicacion < 0)
             {
-                while ((c<= iteracciones) && (xr > tole) && (xr > er))
+                xr = (xi + xd) / 2;
+                er = Math.Abs((xi - xant)) / xr;
+                c = c + 1;
+                while ((c<= iteracciones) && (Math.Abs(Funcion(xr)) > tole) && (xr > er))
                 {
                     xr = (xi + xd) / 2;
-                    er = (xi - xant) / xi;
+                    er = Math.Abs((xi - xant)) / xr;
 
                     multiplicacion = Funcion(xi) * Funcion(xd);
                     if (multiplicacion > 0)
