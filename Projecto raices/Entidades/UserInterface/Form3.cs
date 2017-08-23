@@ -10,31 +10,28 @@ using System.Windows.Forms;
 
 namespace UserInterface
 {
-    public partial class Form2 : Form
+    public partial class Form3 : Form
     {
-        public Form2()
+        public Form3()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string texto = textBoxVi.Text;
-            string texto2 = textBoxVd.Text;
+            string texto = textBoxXINI.Text;
 
-            if (texto == "" || texto2 == "")
+            if (texto == "")
             {
                 texto = "invalido";
-                texto2 = "invalido";
             }
 
             double textoAInt = 0;
             double texto2AInt = 0;
 
             bool result = double.TryParse(texto, out textoAInt);
-            bool result2 = double.TryParse(texto2, out texto2AInt); 
 
-            if (result && result2)
+            if (result)
             {
                 Interface1 owner = this.Owner as Interface1;
                 owner.CalcularRaiz(textoAInt, texto2AInt);

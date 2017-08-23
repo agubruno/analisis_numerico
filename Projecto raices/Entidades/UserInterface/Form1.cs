@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entidades.Logica;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,10 +11,16 @@ using System.Windows.Forms;
 
 namespace UserInterface
 {
-    public partial class Form1 : Form
+    public partial class Form1 : Form, Interface1
     {
+        public int Iteraciones { get; set; }
+        public double Tolerancia { get; set; }
+        public string Metodo { get; set; }
+        public Raiz nuevaraiz { get; set; }
+
         public Form1()
         {
+            nuevaraiz = new Raiz();
             InitializeComponent();
         }
 
@@ -21,9 +28,67 @@ namespace UserInterface
         {
             string texto = textBoxITER.Text;
             string texto2 = textBoxTOLE.Text;
-            Form2 newForm2 = new Form2();
-            newForm2.Owner = this.Owner;
-            newForm2.Show();
+
+            if (texto == "" || texto2 == "")
+            {
+                texto = "invalido";
+                texto2 = "invalido";
+            }
+
+            int textoAInt = 0;
+            double texto2ADouble = 0;
+
+            bool result = int.TryParse(texto, out textoAInt);       
+            bool result2 = double.TryParse(texto2, out texto2ADouble);  
+
+            if (result && result2)
+            {
+               Iteraciones = textoAInt;
+               Tolerancia = texto2ADouble;
+               Metodo = MetodoSeleccionado.Text;
+               if (MetodoSeleccionado.Text == "Biseccion" || MetodoSeleccionado.Text == "Regla falsa")
+               {
+                    Form2 newForm2 = new Form2();
+                    newForm2.Owner = this;
+                    newForm2.Show();
+               }
+
+               if (MetodoSeleccionado.Text == "Newton (tangente)" || MetodoSeleccionado.Text == "Secante")
+               {
+                    Form3 newForm3 = new Form3();
+                    newForm3.Owner = this;
+                    newForm3.Show();
+               }
+
+               if (MetodoSeleccionado.Text == "") // como hago para que no puedan escribir en el metodoseleccionado
+                {
+                    MessageBox.Show("No se ingreso metodo válido, por favor corregir para continuar");
+                }
+            }
+            else
+            {
+                MessageBox.Show("No se ingresaron datos correctos, por favor corroborar");
+            }
+            
+        }
+
+        void Interface1.CalcularRaiz(double vi, double vd)
+        {
+            if (Metodo == "Biseccion")
+            {
+                ResultadoRaiz nuevoResultado = new ResultadoRaiz();
+                nuevoResultado = nuevaraiz.CalcularRaizBiseccion(vi, vd, Iteraciones, Tolerancia);
+                MessageBox.Show("El resultado de la raiz es: " + nuevoResultado.ValorRaiz + ", cuya cantidad de iteracones fueron: " + nuevoResultado.Iteraciones + ", con un error de: " + nuevoResultado.Error);
+            }
+            else
+            {
+
+            }
+        }
+
+        void Interface1.CalcularRaiz(double vini)
+        {
+            throw new NotImplementedException();
         }
     }
 }
