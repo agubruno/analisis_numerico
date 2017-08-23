@@ -15,7 +15,7 @@ namespace Entidades.Logica
 
     public class Raiz
     {
-        public double Funcion (double x)
+        public double Funcion(double x)
         {
             // POENELE QUE ES UNA PARABOLA CUYO MIN ES -2;
 
@@ -26,7 +26,7 @@ namespace Entidades.Logica
             return doble;
         }
 
-        public ResultadoRaiz CalcularRaizBiseccion (double xi, double xd, int iteracciones, double tole)
+        public ResultadoRaiz CalcularRaizBiseccion(double xi, double xd, int iteracciones, double tole)
         {
             double er = 0;
             ResultadoRaiz resultado = new ResultadoRaiz();
@@ -35,12 +35,12 @@ namespace Entidades.Logica
             double xr = 0;
             double xant = 0;
 
-            if (multiplicacion == 0 )
+            if (multiplicacion == 0)
             {
                 resultado.Iteraciones = c;
                 resultado.Error = 0;
 
-                if (Funcion (xi) == 0)
+                if (Funcion(xi) == 0)
                 {
                     resultado.ValorRaiz = xi;
                 }
@@ -53,7 +53,7 @@ namespace Entidades.Logica
 
             if (multiplicacion > 0)
             {
-                throw new Exception("No hay raiz entre estas dos variables"); 
+                throw new Exception("No hay raiz entre estas dos variables");
             }
 
             if (multiplicacion < 0)
@@ -61,7 +61,70 @@ namespace Entidades.Logica
                 xr = (xi + xd) / 2;
                 er = Math.Abs((xi - xant)) / xr;
                 c = c + 1;
-                while ((c<= iteracciones) && (Math.Abs(Funcion(xr)) > tole) && (xr > er))
+                while ((c <= iteracciones) && (Math.Abs(Funcion(xr)) > tole) && (xr > er))
+                {
+                    xr = (xi + xd) / 2;
+                    er = Math.Abs((xi - xant)) / xr;
+
+                    multiplicacion = Funcion(xi) * Funcion(xd);
+                    if (multiplicacion > 0)
+                    {
+                        xi = xr;
+                    }
+                    else
+                    {
+                        xd = xr;
+                    }
+
+                    xant = xr;
+                    c = c + 1;
+                }
+
+                resultado.ValorRaiz = xr;
+                resultado.Iteraciones = c;
+                resultado.Error = er;
+            }
+
+            return resultado;
+        }
+
+
+        public ResultadoRaiz CalcularRaizReglaFalsa(double xi, double xd, int iteracciones, double tole)
+        {
+            double er = 0;
+            ResultadoRaiz resultado = new ResultadoRaiz();
+            int c = 0;
+            double multiplicacion = Funcion(xi) * Funcion(xd);
+            double xr = 0;
+            double xant = 0;
+
+            if (multiplicacion == 0)
+            {
+                resultado.Iteraciones = c;
+                resultado.Error = 0;
+
+                if (Funcion(xi) == 0)
+                {
+                    resultado.ValorRaiz = xi;
+                }
+                else
+                {
+                    resultado.ValorRaiz = xd;
+                }
+                return resultado;
+            }
+
+            if (multiplicacion > 0)
+            {
+                throw new Exception("No hay raiz entre estas dos variables");
+            }
+
+            if (multiplicacion < 0)
+            {
+                xr = (Funcion(xi) *xd - Funcion(xd)*xi) / (Funcion (xi) - Funcion (xd));
+                er = Math.Abs((xi - xant)) / xr;
+                c = c + 1;
+                while ((c <= iteracciones) && (Math.Abs(Funcion(xr)) > tole) && (xr > er))
                 {
                     xr = (xi + xd) / 2;
                     er = Math.Abs((xi - xant)) / xr;

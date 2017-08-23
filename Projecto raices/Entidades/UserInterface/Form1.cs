@@ -74,15 +74,17 @@ namespace UserInterface
 
         void Interface1.CalcularRaiz(double vi, double vd)
         {
+            ResultadoRaiz nuevoResultado = new ResultadoRaiz();
             if (Metodo == "Biseccion")
             {
-                ResultadoRaiz nuevoResultado = new ResultadoRaiz();
                 nuevoResultado = nuevaraiz.CalcularRaizBiseccion(vi, vd, Iteraciones, Tolerancia);
                 MessageBox.Show("El resultado de la raiz es: " + nuevoResultado.ValorRaiz + ", cuya cantidad de iteracones fueron: " + nuevoResultado.Iteraciones + ", con un error de: " + nuevoResultado.Error);
+
             }
             else
             {
-
+                nuevoResultado = nuevaraiz.CalcularRaizReglaFalsa(vi, vd, Iteraciones, Tolerancia);
+                MessageBox.Show("El resultado de la raiz es: " + nuevoResultado.ValorRaiz + ", cuya cantidad de iteracones fueron: " + nuevoResultado.Iteraciones + ", con un error de: " + nuevoResultado.Error);
             }
         }
 
