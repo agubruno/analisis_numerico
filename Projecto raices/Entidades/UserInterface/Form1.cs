@@ -80,16 +80,29 @@ namespace UserInterface
             if (Metodo == "Biseccion")
             {
                 nuevoResultado = NuevaRaiz.CalcularRaizBiseccion(vi, vd, Iteraciones, Tolerancia, FuncionElegida);
-                MessageBox.Show("El resultado de la raiz es: " + nuevoResultado.ValorRaiz + ", cuya cantidad de iteracones fueron: " + nuevoResultado.Iteraciones + ", con un error de: " + nuevoResultado.Error);
-
+                if (nuevoResultado.PosibleCalcularRaiz)
+                {
+                    MessageBox.Show("El resultado de la raiz es: " + nuevoResultado.ValorRaiz + ", cuya cantidad de iteracones fueron: " + nuevoResultado.Iteraciones + ", con un error de: " + nuevoResultado.Error);
+                }
+                else
+                {
+                    MessageBox.Show("No es posible calcular la raiz, el intervalo seleccionado no tiene raiz");
+                }
             }
             else
             {
                 nuevoResultado = NuevaRaiz.CalcularRaizReglaFalsa(vi, vd, Iteraciones, Tolerancia, FuncionElegida);
-                MessageBox.Show("El resultado de la raiz es: " + nuevoResultado.ValorRaiz + ", cuya cantidad de iteracones fueron: " + nuevoResultado.Iteraciones + ", con un error de: " + nuevoResultado.Error);
+                if (nuevoResultado.PosibleCalcularRaiz)
+                {
+                    MessageBox.Show("El resultado de la raiz es: " + nuevoResultado.ValorRaiz + ", cuya cantidad de iteracones fueron: " + nuevoResultado.Iteraciones + ", con un error de: " + nuevoResultado.Error);
+                }
+                else
+                {
+                    MessageBox.Show("No es posible calcular la raiz, el intervalo seleccionado no tiene raiz");
+                }
             }
         }
-
+        
         void Interface1.CalcularRaiz(double vini)
         {
             throw new NotImplementedException();

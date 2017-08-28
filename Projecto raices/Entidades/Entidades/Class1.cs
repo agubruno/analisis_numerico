@@ -59,14 +59,14 @@ namespace Entidades.Logica
 
             if (multiplicacion > 0)
             {
-                RePosibleCalcularRaiz = false
-                throw new Exception("No hay raiz entre estas dos variables");
+                resultado.PosibleCalcularRaiz = false;
             }
 
             if (multiplicacion < 0)
             {
+                resultado.PosibleCalcularRaiz = true;
                 xr = (xi + xd) / 2;
-                er = Math.Abs((xi - xant)) / xr;
+                er = Math.Abs((xi - xant)) / xi;
                 c = c + 1;
                 while ((c <= iteracciones) && (Math.Abs(Funcion(funcion, xr)) > tole) && (xr > er))
                 {
@@ -123,13 +123,15 @@ namespace Entidades.Logica
 
             if (multiplicacion > 0)
             {
-                throw new Exception("No hay raiz entre estas dos variables");
+                resultado.PosibleCalcularRaiz = false;
             }
 
             if (multiplicacion < 0)
             {
+
+                resultado.PosibleCalcularRaiz = true;
                 xr = (Funcion(funcion, xi) *xd - Funcion(funcion, xd)*xi) / (Funcion (funcion, xi) - Funcion (funcion, xd));
-                er = Math.Abs((xi - xant)) / xr;
+                er = Math.Abs((xi - xant)) / xi;
                 c = c + 1;
                 while ((c <= iteracciones) && (Math.Abs(Funcion(funcion,xr)) > tole) && (xr > er))
                 {
