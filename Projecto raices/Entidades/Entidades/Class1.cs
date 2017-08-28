@@ -1,4 +1,5 @@
-﻿using System;
+﻿using org.mariuszgromada.math.mxparser;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,27 +12,32 @@ namespace Entidades.Logica
         public double ValorRaiz { get; set; }
         public int Iteraciones { get; set; }
         public double Error { get; set; }
+        public bool PosibleCalcularRaiz { get; set; }
     }
 
     public class Raiz
     {
-        public double Funcion(double x)
+        public double Funcion(string f, double x)
         {
-            // POENELE QUE ES UNA PARABOLA CUYO MIN ES -2;
+            Function funcion = new Function(f);
 
-            double doble = 0;
+            string argumento = "x = "+Convert.ToString(x);
 
-            doble = (x * x) - 4;
+            Argument argument = new Argument(argumento);
 
-            return doble;
+            Expression r = new Expression("f(x)", funcion, argument);
+
+            var a = r.calculate();
+
+            return a;
         }
 
-        public ResultadoRaiz CalcularRaizBiseccion(double xi, double xd, int iteracciones, double tole)
+        public ResultadoRaiz CalcularRaizBiseccion(double xi, double xd, int iteracciones, double tole, string funcion)
         {
             double er = 0;
             ResultadoRaiz resultado = new ResultadoRaiz();
             int c = 0;
-            double multiplicacion = Funcion(xi) * Funcion(xd);
+            double multiplicacion = Funcion(funcion,xi) * Funcion(funcion,xd);
             double xr = 0;
             double xant = 0;
 
@@ -40,7 +46,7 @@ namespace Entidades.Logica
                 resultado.Iteraciones = c;
                 resultado.Error = 0;
 
-                if (Funcion(xi) == 0)
+                if (Funcion(funcion,xi) == 0)
                 {
                     resultado.ValorRaiz = xi;
                 }
@@ -53,6 +59,7 @@ namespace Entidades.Logica
 
             if (multiplicacion > 0)
             {
+                RePosibleCalcularRaiz = false
                 throw new Exception("No hay raiz entre estas dos variables");
             }
 
@@ -61,12 +68,12 @@ namespace Entidades.Logica
                 xr = (xi + xd) / 2;
                 er = Math.Abs((xi - xant)) / xr;
                 c = c + 1;
-                while ((c <= iteracciones) && (Math.Abs(Funcion(xr)) > tole) && (xr > er))
+                while ((c <= iteracciones) && (Math.Abs(Funcion(funcion, xr)) > tole) && (xr > er))
                 {
                     xr = (xi + xd) / 2;
                     er = Math.Abs((xi - xant)) / xr;
 
-                    multiplicacion = Funcion(xi) * Funcion(xd);
+                    multiplicacion = Funcion(funcion,xi) * Funcion(funcion, xd);
                     if (multiplicacion > 0)
                     {
                         xi = xr;
@@ -89,12 +96,12 @@ namespace Entidades.Logica
         }
 
 
-        public ResultadoRaiz CalcularRaizReglaFalsa(double xi, double xd, int iteracciones, double tole)
+        public ResultadoRaiz CalcularRaizReglaFalsa(double xi, double xd, int iteracciones, double tole, string funcion)
         {
             double er = 0;
             ResultadoRaiz resultado = new ResultadoRaiz();
             int c = 0;
-            double multiplicacion = Funcion(xi) * Funcion(xd);
+            double multiplicacion = Funcion(funcion, xi) * Funcion(funcion, xd);
             double xr = 0;
             double xant = 0;
 
@@ -103,7 +110,7 @@ namespace Entidades.Logica
                 resultado.Iteraciones = c;
                 resultado.Error = 0;
 
-                if (Funcion(xi) == 0)
+                if (Funcion(funcion, xi) == 0)
                 {
                     resultado.ValorRaiz = xi;
                 }
@@ -121,15 +128,15 @@ namespace Entidades.Logica
 
             if (multiplicacion < 0)
             {
-                xr = (Funcion(xi) *xd - Funcion(xd)*xi) / (Funcion (xi) - Funcion (xd));
+                xr = (Funcion(funcion, xi) *xd - Funcion(funcion, xd)*xi) / (Funcion (funcion, xi) - Funcion (funcion, xd));
                 er = Math.Abs((xi - xant)) / xr;
                 c = c + 1;
-                while ((c <= iteracciones) && (Math.Abs(Funcion(xr)) > tole) && (xr > er))
+                while ((c <= iteracciones) && (Math.Abs(Funcion(funcion,xr)) > tole) && (xr > er))
                 {
                     xr = (xi + xd) / 2;
                     er = Math.Abs((xi - xant)) / xr;
 
-                    multiplicacion = Funcion(xi) * Funcion(xd);
+                    multiplicacion = Funcion(funcion,xi) * Funcion(funcion,xd);
                     if (multiplicacion > 0)
                     {
                         xi = xr;

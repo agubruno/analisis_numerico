@@ -16,25 +16,27 @@ namespace UserInterface
         public int Iteraciones { get; set; }
         public double Tolerancia { get; set; }
         public string Metodo { get; set; }
-        public Raiz nuevaraiz { get; set; }
+        public Raiz NuevaRaiz { get; set; }
+        public string FuncionElegida { get; set; }
 
         public Form1()
         {
-            nuevaraiz = new Raiz();
+            NuevaRaiz = new Raiz();
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
+        { 
             string texto = textBoxITER.Text;
             string texto2 = textBoxTOLE.Text;
 
-            if (texto == "" || texto2 == "")
+            if (texto == "" || texto2 == "" || textBoxFUNCION.Text == "") 
             {
                 texto = "invalido";
                 texto2 = "invalido";
             }
 
+            FuncionElegida = "f(x) = " + textBoxFUNCION.Text;
             int textoAInt = 0;
             double texto2ADouble = 0;
 
@@ -77,13 +79,13 @@ namespace UserInterface
             ResultadoRaiz nuevoResultado = new ResultadoRaiz();
             if (Metodo == "Biseccion")
             {
-                nuevoResultado = nuevaraiz.CalcularRaizBiseccion(vi, vd, Iteraciones, Tolerancia);
+                nuevoResultado = NuevaRaiz.CalcularRaizBiseccion(vi, vd, Iteraciones, Tolerancia, FuncionElegida);
                 MessageBox.Show("El resultado de la raiz es: " + nuevoResultado.ValorRaiz + ", cuya cantidad de iteracones fueron: " + nuevoResultado.Iteraciones + ", con un error de: " + nuevoResultado.Error);
 
             }
             else
             {
-                nuevoResultado = nuevaraiz.CalcularRaizReglaFalsa(vi, vd, Iteraciones, Tolerancia);
+                nuevoResultado = NuevaRaiz.CalcularRaizReglaFalsa(vi, vd, Iteraciones, Tolerancia, FuncionElegida);
                 MessageBox.Show("El resultado de la raiz es: " + nuevoResultado.ValorRaiz + ", cuya cantidad de iteracones fueron: " + nuevoResultado.Iteraciones + ", con un error de: " + nuevoResultado.Error);
             }
         }
