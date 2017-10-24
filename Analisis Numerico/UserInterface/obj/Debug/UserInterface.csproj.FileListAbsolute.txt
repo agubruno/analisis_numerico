@@ -1,0 +1,142 @@
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\Projecto raices\Entidades\UserInterface\bin\Debug\UserInterface.exe.config
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\Projecto raices\Entidades\UserInterface\bin\Debug\UserInterface.exe
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\Projecto raices\Entidades\UserInterface\bin\Debug\UserInterface.pdb
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\Projecto raices\Entidades\UserInterface\bin\Debug\Entidades.dll
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\Projecto raices\Entidades\UserInterface\bin\Debug\Entidades.pdb
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\Projecto raices\Entidades\UserInterface\obj\Debug\UserInterface.csprojResolveAssemblyReference.cache
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\Projecto raices\Entidades\UserInterface\obj\Debug\UserInterface.Form1.resources
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\Projecto raices\Entidades\UserInterface\obj\Debug\UserInterface.Properties.Resources.resources
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\Projecto raices\Entidades\UserInterface\obj\Debug\UserInterface.csproj.GenerateResource.Cache
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\Projecto raices\Entidades\UserInterface\obj\Debug\UserInterface.exe
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\Projecto raices\Entidades\UserInterface\obj\Debug\UserInterface.pdb
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\UserInterface\bin\Debug\UserInterface.exe.config
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\UserInterface\bin\Debug\UserInterface.exe
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\UserInterface\bin\Debug\UserInterface.pdb
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\UserInterface\bin\Debug\Entidades.dll
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\UserInterface\bin\Debug\Entidades.pdb
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\UserInterface\obj\Debug\UserInterface.csprojResolveAssemblyReference.cache
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\UserInterface\obj\Debug\UserInterface.Form1.resources
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\UserInterface\obj\Debug\UserInterface.Properties.Resources.resources
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\UserInterface\obj\Debug\UserInterface.csproj.GenerateResource.Cache
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\UserInterface\obj\Debug\UserInterface.exe
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\UserInterface\obj\Debug\UserInterface.pdb
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\UserInterface\obj\Debug\UserInterface.Form2.resources
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\UserInterface\obj\Debug\UserInterface.Form3.resources
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\UserInterface\bin\Debug\MathParser.org-mXparser.Net452.dll
+C:\Users\maxi_\Desktop\Analisis I\UserInterface\bin\Debug\UserInterface.exe.config
+C:\Users\maxi_\Desktop\Analisis I\UserInterface\bin\Debug\UserInterface.exe
+C:\Users\maxi_\Desktop\Analisis I\UserInterface\bin\Debug\UserInterface.pdb
+C:\Users\maxi_\Desktop\Analisis I\UserInterface\bin\Debug\Entidades.dll
+C:\Users\maxi_\Desktop\Analisis I\UserInterface\bin\Debug\MathParser.org-mXparser.Net452.dll
+C:\Users\maxi_\Desktop\Analisis I\UserInterface\bin\Debug\Entidades.pdb
+C:\Users\maxi_\Desktop\Analisis I\UserInterface\obj\Debug\UserInterface.csprojResolveAssemblyReference.cache
+C:\Users\maxi_\Desktop\Analisis I\UserInterface\obj\Debug\UserInterface.Form1.resources
+C:\Users\maxi_\Desktop\Analisis I\UserInterface\obj\Debug\UserInterface.Form2.resources
+C:\Users\maxi_\Desktop\Analisis I\UserInterface\obj\Debug\UserInterface.Form3.resources
+C:\Users\maxi_\Desktop\Analisis I\UserInterface\obj\Debug\UserInterface.Properties.Resources.resources
+C:\Users\maxi_\Desktop\Analisis I\UserInterface\obj\Debug\UserInterface.csproj.GenerateResource.Cache
+C:\Users\maxi_\Desktop\Analisis I\UserInterface\obj\Debug\UserInterface.exe
+C:\Users\maxi_\Desktop\Analisis I\UserInterface\obj\Debug\UserInterface.pdb
+D:\Analisis I\UserInterface\obj\Debug\UserInterface.csprojResolveAssemblyReference.cache
+D:\Analisis I\UserInterface\obj\Debug\UserInterface.Form1.resources
+D:\Analisis I\UserInterface\obj\Debug\UserInterface.Form2.resources
+D:\Analisis I\UserInterface\obj\Debug\UserInterface.Form3.resources
+D:\Analisis I\UserInterface\obj\Debug\UserInterface.Properties.Resources.resources
+D:\Analisis I\UserInterface\obj\Debug\UserInterface.csproj.GenerateResource.Cache
+D:\Analisis I\UserInterface\obj\Debug\UserInterface.exe
+D:\Analisis I\UserInterface\obj\Debug\UserInterface.pdb
+D:\Analisis I\UserInterface\bin\Debug\UserInterface.exe.config
+D:\Analisis I\UserInterface\bin\Debug\UserInterface.exe
+D:\Analisis I\UserInterface\bin\Debug\UserInterface.pdb
+D:\Analisis I\UserInterface\bin\Debug\Entidades.dll
+D:\Analisis I\UserInterface\bin\Debug\MathParser.org-mXparser.Net452.dll
+D:\Analisis I\UserInterface\bin\Debug\Entidades.pdb
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\Analisis Numerico\UserInterface\bin\Debug\UserInterface.exe.config
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\Analisis Numerico\UserInterface\bin\Debug\UserInterface.exe
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\Analisis Numerico\UserInterface\bin\Debug\UserInterface.pdb
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\Analisis Numerico\UserInterface\bin\Debug\Entidades.dll
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\Analisis Numerico\UserInterface\bin\Debug\MathParser.org-mXparser.Net452.dll
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\Analisis Numerico\UserInterface\bin\Debug\Entidades.pdb
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\Analisis Numerico\UserInterface\obj\Debug\UserInterface.csprojResolveAssemblyReference.cache
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\Analisis Numerico\UserInterface\obj\Debug\UserInterface.Form1.resources
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\Analisis Numerico\UserInterface\obj\Debug\UserInterface.Form2.resources
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\Analisis Numerico\UserInterface\obj\Debug\UserInterface.Form3.resources
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\Analisis Numerico\UserInterface\obj\Debug\UserInterface.MenuInicial.resources
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\Analisis Numerico\UserInterface\obj\Debug\UserInterface.Properties.Resources.resources
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\Analisis Numerico\UserInterface\obj\Debug\UserInterface.Sistemas_de_ecuaciones.GrillaMatriz.resources
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\Analisis Numerico\UserInterface\obj\Debug\UnitTestProject2.SistemasEcuaciones.resources
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\Analisis Numerico\UserInterface\obj\Debug\UserInterface.csproj.GenerateResource.Cache
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\Analisis Numerico\UserInterface\obj\Debug\UserInterface.exe
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\Analisis Numerico\UserInterface\obj\Debug\UserInterface.pdb
+C:\Users\maxi_\Desktop\Analisis Numerico\UserInterface\obj\Debug\UserInterface.csprojResolveAssemblyReference.cache
+C:\Users\maxi_\Desktop\Analisis Numerico\UserInterface\obj\Debug\UserInterface.Form1.resources
+C:\Users\maxi_\Desktop\Analisis Numerico\UserInterface\obj\Debug\UserInterface.Form2.resources
+C:\Users\maxi_\Desktop\Analisis Numerico\UserInterface\obj\Debug\UserInterface.Form3.resources
+C:\Users\maxi_\Desktop\Analisis Numerico\UserInterface\obj\Debug\UserInterface.MenuInicial.resources
+C:\Users\maxi_\Desktop\Analisis Numerico\UserInterface\obj\Debug\UserInterface.Properties.Resources.resources
+C:\Users\maxi_\Desktop\Analisis Numerico\UserInterface\obj\Debug\UserInterface.Sistemas_de_ecuaciones.GrillaMatriz.resources
+C:\Users\maxi_\Desktop\Analisis Numerico\UserInterface\obj\Debug\UnitTestProject2.SistemasEcuaciones.resources
+C:\Users\maxi_\Desktop\Analisis Numerico\UserInterface\obj\Debug\UserInterface.csproj.GenerateResource.Cache
+C:\Users\maxi_\Desktop\Analisis Numerico\UserInterface\obj\Debug\UserInterface.exe
+C:\Users\maxi_\Desktop\Analisis Numerico\UserInterface\obj\Debug\UserInterface.pdb
+C:\Users\maxi_\Desktop\Analisis Numerico\UserInterface\bin\Debug\UserInterface.exe.config
+C:\Users\maxi_\Desktop\Analisis Numerico\UserInterface\bin\Debug\UserInterface.exe
+C:\Users\maxi_\Desktop\Analisis Numerico\UserInterface\bin\Debug\UserInterface.pdb
+C:\Users\maxi_\Desktop\Analisis Numerico\UserInterface\bin\Debug\Entidades.dll
+C:\Users\maxi_\Desktop\Analisis Numerico\UserInterface\bin\Debug\MathParser.org-mXparser.Net452.dll
+C:\Users\maxi_\Desktop\Analisis Numerico\UserInterface\bin\Debug\Entidades.pdb
+D:\Analisis Numerico\UserInterface\bin\Debug\UserInterface.exe.config
+D:\Analisis Numerico\UserInterface\bin\Debug\UserInterface.exe
+D:\Analisis Numerico\UserInterface\bin\Debug\UserInterface.pdb
+D:\Analisis Numerico\UserInterface\bin\Debug\Entidades.dll
+D:\Analisis Numerico\UserInterface\bin\Debug\MathParser.org-mXparser.Net452.dll
+D:\Analisis Numerico\UserInterface\bin\Debug\Entidades.pdb
+D:\Analisis Numerico\UserInterface\obj\Debug\UserInterface.csprojResolveAssemblyReference.cache
+D:\Analisis Numerico\UserInterface\obj\Debug\UserInterface.Form1.resources
+D:\Analisis Numerico\UserInterface\obj\Debug\UserInterface.Form2.resources
+D:\Analisis Numerico\UserInterface\obj\Debug\UserInterface.Form3.resources
+D:\Analisis Numerico\UserInterface\obj\Debug\UserInterface.MenuInicial.resources
+D:\Analisis Numerico\UserInterface\obj\Debug\UserInterface.Properties.Resources.resources
+D:\Analisis Numerico\UserInterface\obj\Debug\UserInterface.Sistemas_de_ecuaciones.GrillaMatriz.resources
+D:\Analisis Numerico\UserInterface\obj\Debug\UnitTestProject2.SistemasEcuaciones.resources
+D:\Analisis Numerico\UserInterface\obj\Debug\UserInterface.csproj.GenerateResource.Cache
+D:\Analisis Numerico\UserInterface\obj\Debug\UserInterface.exe
+D:\Analisis Numerico\UserInterface\obj\Debug\UserInterface.pdb
+E:\Analisis Numerico\UserInterface\bin\Debug\UserInterface.exe.config
+E:\Analisis Numerico\UserInterface\bin\Debug\UserInterface.exe
+E:\Analisis Numerico\UserInterface\bin\Debug\UserInterface.pdb
+E:\Analisis Numerico\UserInterface\bin\Debug\Entidades.dll
+E:\Analisis Numerico\UserInterface\bin\Debug\MathParser.org-mXparser.Net452.dll
+E:\Analisis Numerico\UserInterface\bin\Debug\Entidades.pdb
+E:\Analisis Numerico\UserInterface\obj\Debug\UserInterface.csprojResolveAssemblyReference.cache
+E:\Analisis Numerico\UserInterface\obj\Debug\UserInterface.Form1.resources
+E:\Analisis Numerico\UserInterface\obj\Debug\UserInterface.Form2.resources
+E:\Analisis Numerico\UserInterface\obj\Debug\UserInterface.Form3.resources
+E:\Analisis Numerico\UserInterface\obj\Debug\UserInterface.MenuInicial.resources
+E:\Analisis Numerico\UserInterface\obj\Debug\UserInterface.Properties.Resources.resources
+E:\Analisis Numerico\UserInterface\obj\Debug\UserInterface.Sistemas_de_ecuaciones.GrillaMatriz.resources
+E:\Analisis Numerico\UserInterface\obj\Debug\UnitTestProject2.SistemasEcuaciones.resources
+E:\Analisis Numerico\UserInterface\obj\Debug\UserInterface.csproj.GenerateResource.Cache
+E:\Analisis Numerico\UserInterface\obj\Debug\UserInterface.exe
+E:\Analisis Numerico\UserInterface\obj\Debug\UserInterface.pdb
+C:\Users\agubr\Desktop\Analisis Numerico\UserInterface\bin\Debug\UserInterface.exe.config
+C:\Users\agubr\Desktop\Analisis Numerico\UserInterface\bin\Debug\UserInterface.exe
+C:\Users\agubr\Desktop\Analisis Numerico\UserInterface\bin\Debug\UserInterface.pdb
+C:\Users\agubr\Desktop\Analisis Numerico\UserInterface\bin\Debug\Entidades.dll
+C:\Users\agubr\Desktop\Analisis Numerico\UserInterface\bin\Debug\MathParser.org-mXparser.Net452.dll
+C:\Users\agubr\Desktop\Analisis Numerico\UserInterface\bin\Debug\Entidades.pdb
+C:\Users\agubr\Desktop\Analisis Numerico\UserInterface\obj\Debug\UserInterface.csprojResolveAssemblyReference.cache
+C:\Users\agubr\Desktop\Analisis Numerico\UserInterface\obj\Debug\UserInterface.Form1.resources
+C:\Users\agubr\Desktop\Analisis Numerico\UserInterface\obj\Debug\UserInterface.Form2.resources
+C:\Users\agubr\Desktop\Analisis Numerico\UserInterface\obj\Debug\UserInterface.Form3.resources
+C:\Users\agubr\Desktop\Analisis Numerico\UserInterface\obj\Debug\UserInterface.MenuInicial.resources
+C:\Users\agubr\Desktop\Analisis Numerico\UserInterface\obj\Debug\UserInterface.Properties.Resources.resources
+C:\Users\agubr\Desktop\Analisis Numerico\UserInterface\obj\Debug\UserInterface.Sistemas_de_ecuaciones.GrillaMatriz.resources
+C:\Users\agubr\Desktop\Analisis Numerico\UserInterface\obj\Debug\UnitTestProject2.SistemasEcuaciones.resources
+C:\Users\agubr\Desktop\Analisis Numerico\UserInterface\obj\Debug\UserInterface.csproj.GenerateResource.Cache
+C:\Users\agubr\Desktop\Analisis Numerico\UserInterface\obj\Debug\UserInterface.exe
+C:\Users\agubr\Desktop\Analisis Numerico\UserInterface\obj\Debug\UserInterface.pdb
+C:\Users\agubr\Desktop\Analisis Numerico\UserInterface\obj\Debug\UserInterface.Sistemas_de_ecuaciones.Seleccion_del_metodo.resources
+C:\Users\maxi_\Desktop\Analisis Numerico\UserInterface\obj\Debug\UserInterface.Sistemas_de_ecuaciones.Seleccion_del_metodo.resources
+C:\Users\maxi_\Desktop\Analisis Numerico\UserInterface\obj\Debug\UserInterface.Regresión.IngresoDePuntos.resources
+C:\Users\maxi_\Desktop\Analisis Numerico\UserInterface\obj\Debug\UserInterface.Regresión.TiposRegresiones.resources

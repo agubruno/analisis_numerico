@@ -1,0 +1,42 @@
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\Entidades\bin\Debug\Entidades.dll
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\Entidades\bin\Debug\Entidades.pdb
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\Entidades\obj\Debug\Entidades.Logica.csprojResolveAssemblyReference.cache
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\Entidades\obj\Debug\Entidades.dll
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\Entidades\obj\Debug\Entidades.pdb
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\Entidades\bin\Debug\MathParser.org-mXparser.Net452.dll
+C:\Users\maxi_\Desktop\Analisis I\Entidades\bin\Debug\Entidades.dll
+C:\Users\maxi_\Desktop\Analisis I\Entidades\bin\Debug\Entidades.pdb
+C:\Users\maxi_\Desktop\Analisis I\Entidades\bin\Debug\MathParser.org-mXparser.Net452.dll
+C:\Users\maxi_\Desktop\Analisis I\Entidades\obj\Debug\Entidades.Logica.csprojResolveAssemblyReference.cache
+C:\Users\maxi_\Desktop\Analisis I\Entidades\obj\Debug\Entidades.dll
+C:\Users\maxi_\Desktop\Analisis I\Entidades\obj\Debug\Entidades.pdb
+D:\Analisis I\Entidades\obj\Debug\Entidades.Logica.csprojResolveAssemblyReference.cache
+D:\Analisis I\Entidades\obj\Debug\Entidades.dll
+D:\Analisis I\Entidades\obj\Debug\Entidades.pdb
+D:\Analisis I\Entidades\bin\Debug\Entidades.dll
+D:\Analisis I\Entidades\bin\Debug\Entidades.pdb
+D:\Analisis I\Entidades\bin\Debug\MathParser.org-mXparser.Net452.dll
+D:\Analisis Numerico\Entidades\bin\Debug\Entidades.dll
+D:\Analisis Numerico\Entidades\bin\Debug\Entidades.pdb
+D:\Analisis Numerico\Entidades\bin\Debug\MathParser.org-mXparser.Net452.dll
+D:\Analisis Numerico\Entidades\obj\Debug\Entidades.Logica.csprojResolveAssemblyReference.cache
+D:\Analisis Numerico\Entidades\obj\Debug\Entidades.dll
+D:\Analisis Numerico\Entidades\obj\Debug\Entidades.pdb
+E:\Analisis Numerico\Entidades\bin\Debug\Entidades.dll
+E:\Analisis Numerico\Entidades\bin\Debug\Entidades.pdb
+E:\Analisis Numerico\Entidades\bin\Debug\MathParser.org-mXparser.Net452.dll
+E:\Analisis Numerico\Entidades\obj\Debug\Entidades.Logica.csprojResolveAssemblyReference.cache
+E:\Analisis Numerico\Entidades\obj\Debug\Entidades.dll
+E:\Analisis Numerico\Entidades\obj\Debug\Entidades.pdb
+C:\Users\agubr\Desktop\Analisis Numerico\Entidades\bin\Debug\Entidades.dll
+C:\Users\agubr\Desktop\Analisis Numerico\Entidades\bin\Debug\Entidades.pdb
+C:\Users\agubr\Desktop\Analisis Numerico\Entidades\bin\Debug\MathParser.org-mXparser.Net452.dll
+C:\Users\agubr\Desktop\Analisis Numerico\Entidades\obj\Debug\Entidades.Logica.csprojResolveAssemblyReference.cache
+C:\Users\agubr\Desktop\Analisis Numerico\Entidades\obj\Debug\Entidades.dll
+C:\Users\agubr\Desktop\Analisis Numerico\Entidades\obj\Debug\Entidades.pdb
+C:\Users\maxi_\Desktop\Analisis Numerico\Entidades\bin\Debug\Entidades.dll
+C:\Users\maxi_\Desktop\Analisis Numerico\Entidades\bin\Debug\Entidades.pdb
+C:\Users\maxi_\Desktop\Analisis Numerico\Entidades\bin\Debug\MathParser.org-mXparser.Net452.dll
+C:\Users\maxi_\Desktop\Analisis Numerico\Entidades\obj\Debug\Entidades.Logica.csprojResolveAssemblyReference.cache
+C:\Users\maxi_\Desktop\Analisis Numerico\Entidades\obj\Debug\Entidades.dll
+C:\Users\maxi_\Desktop\Analisis Numerico\Entidades\obj\Debug\Entidades.pdb

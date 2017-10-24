@@ -1,0 +1,17 @@
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\UnitTestProject2\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\UnitTestProject2\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\UnitTestProject2\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\UnitTestProject2\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\UnitTestProject2\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\UnitTestProject2\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\UnitTestProject2\bin\Debug\UnitTestProject2.dll
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\UnitTestProject2\bin\Debug\UnitTestProject2.pdb
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\UnitTestProject2\bin\Debug\Entidades.dll
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\UnitTestProject2\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\UnitTestProject2\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\UnitTestProject2\bin\Debug\Entidades.pdb
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\UnitTestProject2\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\UnitTestProject2\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\UnitTestProject2\obj\Debug\UnitTestProject2.csprojResolveAssemblyReference.cache
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\UnitTestProject2\obj\Debug\UnitTestProject2.dll
+C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\UnitTestProject2\obj\Debug\UnitTestProject2.pdb
