@@ -1,6 +1,0 @@
-C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\Entidades\bin\Debug\Entidades.dll
-C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\Entidades\bin\Debug\Entidades.pdb
-C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\Entidades\obj\Debug\Entidades.Logica.csprojResolveAssemblyReference.cache
-C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\Entidades\obj\Debug\Entidades.dll
-C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\Entidades\obj\Debug\Entidades.pdb
-C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\Entidades\bin\Debug\MathParser.org-mXparser.Net452.dll
