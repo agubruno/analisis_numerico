@@ -121,13 +121,28 @@ namespace Entidades
                         }
                     }
 
-                    if (indice != CantidadIncognitas - 1 && j == CantidadIncognitas)
+
+                    bool coninuar = false;
+                    for (int k = 0; k < CantidadIncognitas; k++)
+                    {
+                        if (i != j)
+                        {
+                            if (Sistemas[i, k] != 0)
+                            {
+                                coninuar = true;
+                            }
+                        }
+
+                    }
+                    if ((indice != CantidadIncognitas - 1 && j == CantidadIncognitas) && coninuar == true)
                     {
                         j = 0;
                         bandera = true;
                         aux = 0;
                         aux2 = 0;
                     }
+
+                    
                 }
 
             }

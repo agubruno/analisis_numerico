@@ -1,4 +1,4 @@
-﻿using org.mariuszgromada.math.mxparser;
+﻿//using org.mariuszgromada.math.mxparser;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,15 +19,16 @@ namespace Entidades.Logica
     {
         public double Funcion(string f, double x)
         {
-            Function funcion = new Function(f);
+            //Function funcion = new Function(f);
 
-            string argumento = "x = "+Convert.ToString(x).Replace(',','.');
+            //string argumento = "x = "+Convert.ToString(x).Replace(',','.');
 
-            Argument argument = new Argument(argumento);
+            //Argument argument = new Argument(argumento);
 
-            Expression r = new Expression("f(x)", funcion, argument);
+            //Expression r = new Expression("f(x)", funcion, argument);
 
-            var a = r.calculate();
+            double a=0;
+            //var a = r.calculate();
 
             return a;
         }
