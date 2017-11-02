@@ -57,18 +57,18 @@ namespace UserInterface.Regresión
                     }
                 }
             }
+            Regresion nuevaRegresion = new Regresion();
 
             if (Metodo == "Regresión Lineal por mínimos cuadrados ")
             {
-                Regresion nuevaRegresion = new Regresion();
-                ResultadoRegresionLineal nuevoResultado = new ResultadoRegresionLineal();
+                ResultadoRegresion nuevoResultado = new ResultadoRegresion();
                 nuevoResultado = nuevaRegresion.CalcularRegresionLineal(Matriz, Cantidad);
 
-                MessageBox.Show("El termino independiente es: "+nuevoResultado.Resultadoa0 + ", su coeficiente es: "+nuevoResultado.Resultadoa1+", y su coeficiente de correlacion es: " + nuevaRegresion.CoefienteCorrelacion(Matriz, Cantidad, nuevoResultado.Resultadoa1, nuevoResultado.Resultadoa0));
+                MessageBox.Show("El termino independiente es: "+nuevoResultado.Resultadoa0 + ", su coeficiente es: "+nuevoResultado.Resultadoa1+", y su coeficiente de correlacion es: " + nuevaRegresion.CoefienteCorrelacion(Matriz, Cantidad, nuevoResultado.Resultados));
             }
             else
             {
-
+                var nuevoResultado = nuevaRegresion.CalcularRegresionPolimonial(Matriz, Cantidad, 2);
             }
                 
                         

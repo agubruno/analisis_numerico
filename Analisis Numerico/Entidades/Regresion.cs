@@ -6,26 +6,58 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class ResultadoRegresionLineal
+    public class ResultadoRegresion
     {
        public double Resultadoa1 { get; set; }
         public double Resultadoa0 { get; set; }
+        public List<double> Resultados { get; set;}
+
+        public ResultadoRegresion ()
+        {
+            Resultados = new List<double>();
+        }
     }
 
 
     public class Regresion
     {
-        public double CoefienteCorrelacion(double[,] coordenadas, int cantidadPuntos, double a1, double a0)
+        public double CoefienteCorrelacion(double[,] coordenadas, int cantidadPuntos, List<double> listaCoeficientes)
         {
             double st = 0;
+            double calculoPrevio = 0;
             double sr = 0;
             double promedioY = 0;
             double r;
-            for (int i = 0; i < cantidadPuntos; i++)
+
+            for (int filas = 0; filas < cantidadPuntos; filas++)
             {
-                promedioY = promedioY + coordenadas[i, 1];
-                sr = sr + Math.Pow((coordenadas[i, 1] - a1 * coordenadas[i, 0] - a0 ), 2);
+
+                promedioY = promedioY + coordenadas[filas, 1];
+                for (int indice = 0; indice < listaCoeficientes.Count(); indice++)
+                {
+                    if (indice != 0 )
+                    {
+                        calculoPrevio = calculoPrevio + (listaCoeficientes[indice] * (Math.Pow(coordenadas[filas, 0],indice)));
+                    }
+                }
+                calculoPrevio = calculoPrevio + listaCoeficientes[0];
+                calculoPrevio = coordenadas[filas, 1] - calculoPrevio;
+
+                sr = sr + Math.Pow(calculoPrevio, 2);
+
+                calculoPrevio = 0;
+
             }
+
+
+
+
+
+            //for (int i = 0; i < cantidadPuntos; i++)
+            //{
+            //    promedioY = promedioY + coordenadas[i, 1];
+            //    sr = sr + Math.Pow((coordenadas[i, 1] - a1 * coordenadas[i, 0] - a0 ), 2);
+            //}
             promedioY = promedioY / cantidadPuntos;
 
             for (int i = 0; i < cantidadPuntos; i++)
@@ -40,9 +72,9 @@ namespace Entidades
 
         }
 
-        public ResultadoRegresionLineal CalcularRegresionLineal(double[,] coordenadas, int cantidadPuntos)
+        public ResultadoRegresion CalcularRegresionLineal(double[,] coordenadas, int cantidadPuntos)
         {
-            ResultadoRegresionLineal nuevoResultado = new ResultadoRegresionLineal();
+            ResultadoRegresion nuevoResultado = new ResultadoRegresion();
 
             double sumatoriaXY = 0;
             double x2 = 0;
@@ -61,12 +93,15 @@ namespace Entidades
             nuevoResultado.Resultadoa0 = a0;
             nuevoResultado.Resultadoa1 = a1;
 
+            nuevoResultado.Resultados.Add(a0);
+            nuevoResultado.Resultados.Add(a1);
+
             return nuevoResultado;
         }
 
-        public ResultadoRegresionLineal CalcularRegresionPolimonial(double[,] coordenadas, int cantidadPuntos, int gradoCurva)
+        public ResultadoRegresion CalcularRegresionPolimonial(double[,] coordenadas, int cantidadPuntos, int gradoCurva)
         {
-            ResultadoRegresionLineal nuevoResltado = new ResultadoRegresionLineal();
+            ResultadoRegresion nuevoResltado = new ResultadoRegresion();
             double elevado = 0;
 
             double[,] Matriz = new double[gradoCurva + 2, gradoCurva + 2];
@@ -106,7 +141,9 @@ namespace Entidades
             SistemaDeEcuacion nuevoSistema = new SistemaDeEcuacion();
             var nuevoRsultadoSistemas = nuevoSistema.CalcularSistemaGaussJordam(Matriz, gradoCurva + 2);
 
-            //Como calculamos coeficiete de grado mayor a 1?
+            nuevoResltado.Resultados=nuevoRsultadoSistemas.resultado;
+            CoefienteCorrelacion(coordenadas, cantidadPuntos, nuevoResltado.Resultados);
+
             return nuevoResltado;
 
         }
