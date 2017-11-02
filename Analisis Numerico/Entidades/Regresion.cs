@@ -17,40 +17,24 @@ namespace Entidades
     {
         public double CoefienteCorrelacion(double[,] coordenadas, int cantidadPuntos, double a1, double a0)
         {
-        //    double st = 0;
-        //    double sr = 0;
+            double st = 0;
+            double sr = 0;
             double promedioY = 0;
-            double promedioX = 0;
             double r;
             for (int i = 0; i < cantidadPuntos; i++)
             {
                 promedioY = promedioY + coordenadas[i, 1];
-                promedioX = promedioX + coordenadas[i, 0];
-               // st = st + Math.Pow((a1 * coordenadas[i, 0] + a0 - coordenadas[i, 1]), 2);
+                sr = sr + Math.Pow((coordenadas[i, 1] - a1 * coordenadas[i, 0] - a0 ), 2);
             }
             promedioY = promedioY / cantidadPuntos;
-            promedioX = promedioX / cantidadPuntos;
-            double Sxy = 0;
-            double X2 = 0;
-            double Y2 = 0;
+
             for (int i = 0; i < cantidadPuntos; i++)
             {
-                Sxy = Sxy + (coordenadas[i, 0] - promedioX) * (coordenadas[i, 1] - promedioY);
-                X2 = X2 + Math.Pow((coordenadas[i, 0] - promedioX),2);
-                Y2= Y2 + Math.Pow((coordenadas[i, 1] - promedioY), 2);
+                st = st + Math.Pow((coordenadas[i, 1] -promedioY), 2);
             }
-            Sxy = Math.Abs(Sxy);
-            X2 = Math.Sqrt(X2);
-            Y2 = Math.Sqrt(Y2);
 
-            //for (int i = 0; i < cantidadPuntos; i++)
-            //{
-            //    st = st + Math.Pow((promedioY - coordenadas[i, 1]), 2);
-            //}
-
-            //r = Math.Sqrt(Math.Abs((st - sr) / st)) * 100;
-
-            r = (Sxy / (X2 * Y2)) * 100;
+            r = Math.Sqrt(Math.Abs((st - sr) / st)) * 100;
+            
 
             return r;
 
