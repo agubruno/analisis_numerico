@@ -99,37 +99,37 @@ namespace Entidades
             return nuevoResultado;
         }
 
-        public ResultadoRegresion CalcularRegresionPolimonial(double[,] coordenadas, int cantidadPuntos, int gradoCurva)
+        public ResultadoRegresion CalcularRegresionPolimonialInterno(double[,] coordenadas, int cantidadPuntos, int gradoCurva)
         {
             ResultadoRegresion nuevoResltado = new ResultadoRegresion();
             double elevado = 0;
 
-            double[,] Matriz = new double[gradoCurva + 2, gradoCurva + 2];
+            double[,] Matriz = new double[gradoCurva + 3, gradoCurva + 3];
 
             Matriz[0, 0] = cantidadPuntos;
 
             for (int i = 0; i < gradoCurva + 3; i++)
             {
                 elevado = i;
-                for (int j = 0; i < gradoCurva + 3; i++)
+                for (int j = 0; j < gradoCurva + 3; j++)
                 {
-                    for (int sumatoria = 0; i < cantidadPuntos + 1; i++)
+                    for (int sumatoria = 0; sumatoria < cantidadPuntos ; sumatoria++)
                     {
                         //-----------------------CALCULA COEFICIENTES
-                        if (elevado != 0)
+                        if (elevado != 0 && j != gradoCurva + 2)
                         {
-                            Matriz[i, j] = Matriz[i, j] + Math.Pow(coordenadas[1, sumatoria], elevado);
+                            Matriz[i, j] = Matriz[i, j] + Math.Pow(coordenadas[sumatoria, 0], elevado);
                         }
                         //------------------------CALCULA TERMINO INDEPENDIENTE------------------------------------------                
                         if (j == gradoCurva + 2)
                         {
                             if (i == 0)
                             {
-                                Matriz[i, j] = Matriz[i, j] + coordenadas[0, sumatoria];
+                                Matriz[i, j] = Matriz[i, j] + coordenadas[sumatoria, 1];
                             }
                             else
                             {
-                                Matriz[i, j] = Matriz[i, j] + (coordenadas[0, sumatoria] * Math.Pow(coordenadas[1, sumatoria], i));
+                                Matriz[i, j] = Matriz[i, j] + (coordenadas[sumatoria, 1] * Math.Pow(coordenadas[sumatoria, 0], i));
                             }
                         }
 
@@ -142,10 +142,28 @@ namespace Entidades
             var nuevoRsultadoSistemas = nuevoSistema.CalcularSistemaGaussJordam(Matriz, gradoCurva + 2);
 
             nuevoResltado.Resultados=nuevoRsultadoSistemas.resultado;
-            CoefienteCorrelacion(coordenadas, cantidadPuntos, nuevoResltado.Resultados);
+
+            var coeficiente = CoefienteCorrelacion(coordenadas, cantidadPuntos, nuevoResltado.Resultados);
 
             return nuevoResltado;
 
         }
+
+        public ResultadoRegresion CalcularRegrecionPolinomial(double[,] coordenadas, int cantidadPuntos, int gradoCurba)
+        {
+            var nuevoResultado =CalcularRegresionPolimonialInterno(coordenadas, cantidadPuntos, gradoCurba);
+
+            var coeficiente = CoefienteCorrelacion(coordenadas, cantidadPuntos, nuevoResultado.Resultados);
+
+            while (coeficiente < 85)
+            {
+                gradoCurba = gradoCurba + 1;
+                nuevoResultado = CalcularRegresionPolimonialInterno(coordenadas, cantidadPuntos, gradoCurba);
+                coeficiente = CoefienteCorrelacion(coordenadas, cantidadPuntos, nuevoResultado.Resultados);
+            }
+
+            return nuevoResultado;
+        }
+
     }
 }

@@ -159,3 +159,4 @@ C:\Users\agubr\Documents\GitHub\analisis_numerico\Analisis Numerico\UserInterfac
 C:\Users\agubr\Documents\GitHub\analisis_numerico\Analisis Numerico\UserInterface\obj\Debug\UserInterface.csproj.GenerateResource.Cache
 C:\Users\agubr\Documents\GitHub\analisis_numerico\Analisis Numerico\UserInterface\obj\Debug\UserInterface.exe
 C:\Users\agubr\Documents\GitHub\analisis_numerico\Analisis Numerico\UserInterface\obj\Debug\UserInterface.pdb
+C:\Users\agubr\Documents\GitHub\analisis_numerico\Analisis Numerico\UserInterface\obj\Debug\UserInterface.Regresión.ResultadosRegresion.resources

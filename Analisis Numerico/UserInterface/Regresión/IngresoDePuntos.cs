@@ -11,13 +11,17 @@ using System.Windows.Forms;
 
 namespace UserInterface.Regresión
 {
-    public partial class IngresoDePuntos : Form
+    public partial class IngresoDePuntos : Form, IRegresion
     {
         public string Metodo { get; set; }
         public int Cantidad { get; set; }
+        public List<double> ResultadosRegresion { get; set; }
+        public double CoeficienteCorrelacion { get; set; }
+
         public IngresoDePuntos()
         {
             InitializeComponent();
+            ResultadosRegresion = new List<double>();
         }
 
         private void IngresoDePuntos_Load(object sender, EventArgs e)
@@ -68,10 +72,23 @@ namespace UserInterface.Regresión
             }
             else
             {
-                var nuevoResultado = nuevaRegresion.CalcularRegresionPolimonial(Matriz, Cantidad, 2);
-            }
-                
-                        
+                var nuevoResultado = nuevaRegresion.CalcularRegrecionPolinomial(Matriz, Cantidad, 2);
+                ResultadosRegresion = nuevoResultado.Resultados;
+                CoeficienteCorrelacion = nuevaRegresion.CoefienteCorrelacion(Matriz, Cantidad, nuevoResultado.Resultados);
+                ResultadosRegresion nuevoResultadoRegresion = new Regresión.ResultadosRegresion();
+                nuevoResultadoRegresion.Owner = this;
+                nuevoResultadoRegresion.Show();
+            }           
+        }
+
+        public List<double> RetornarResultadosRegresion()
+        {
+            return ResultadosRegresion;
+        }
+
+        public double RetorniarCoeficiente()
+        {
+            return CoeficienteCorrelacion;
         }
     }
 }

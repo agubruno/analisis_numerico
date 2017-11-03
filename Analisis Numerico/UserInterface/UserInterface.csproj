@@ -81,6 +81,13 @@
     <Compile Include="Regresión\IngresoDePuntos.Designer.cs">
       <DependentUpon>IngresoDePuntos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Regresión\IRegresion.cs" />
+    <Compile Include="Regresión\ResultadosRegresion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Regresión\ResultadosRegresion.Designer.cs">
+      <DependentUpon>ResultadosRegresion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Regresión\TiposRegresiones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +138,9 @@
     </Compile>
     <EmbeddedResource Include="Regresión\IngresoDePuntos.resx">
       <DependentUpon>IngresoDePuntos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Regresión\ResultadosRegresion.resx">
+      <DependentUpon>ResultadosRegresion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Regresión\TiposRegresiones.resx">
       <DependentUpon>TiposRegresiones.cs</DependentUpon>
