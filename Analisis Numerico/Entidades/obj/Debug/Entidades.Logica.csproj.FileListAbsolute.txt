@@ -51,3 +51,6 @@ C:\Demo\analisis_numerico\Analisis Numerico\Entidades\bin\Debug\MathParser.org-m
 C:\Demo\analisis_numerico\Analisis Numerico\Entidades\obj\Debug\Entidades.Logica.csprojResolveAssemblyReference.cache
 C:\Demo\analisis_numerico\Analisis Numerico\Entidades\obj\Debug\Entidades.dll
 C:\Demo\analisis_numerico\Analisis Numerico\Entidades\obj\Debug\Entidades.pdb
+C:\Users\agubr\Documents\GitHub\Analisis Numerico\analisis_numerico\Analisis Numerico\Entidades\obj\Debug\Entidades.Logica.csprojResolveAssemblyReference.cache
+C:\Users\agubr\Documents\GitHub\Analisis Numerico\analisis_numerico\Analisis Numerico\Entidades\obj\Debug\Entidades.dll
+C:\Users\agubr\Documents\GitHub\Analisis Numerico\analisis_numerico\Analisis Numerico\Entidades\obj\Debug\Entidades.pdb
