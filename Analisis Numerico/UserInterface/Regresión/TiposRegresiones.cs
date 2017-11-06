@@ -38,10 +38,12 @@ namespace UserInterface.Regresión
             {
                 CantidadPuntos = textoAInt;
                 MetodoSeleccionado = comboBox1.Text;
+                
+                    IngresoDePuntos IngresoDePuntos = new IngresoDePuntos();
+                    IngresoDePuntos.Owner = this;
+                    IngresoDePuntos.Show();
 
-                IngresoDePuntos IngresoDePuntos = new IngresoDePuntos();
-                IngresoDePuntos.Owner = this;
-                IngresoDePuntos.Show();
+                
 
             }
         }

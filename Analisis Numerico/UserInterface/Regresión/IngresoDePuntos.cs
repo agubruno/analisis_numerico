@@ -11,13 +11,13 @@ using System.Windows.Forms;
 
 namespace UserInterface.Regresión
 {
-    public partial class IngresoDePuntos : Form, IRegresion
+    public partial class IngresoDePuntos : Form, IRegresion, PasarNumero
     {
         public string Metodo { get; set; }
         public int Cantidad { get; set; }
         public List<double> ResultadosRegresion { get; set; }
         public double CoeficienteCorrelacion { get; set; }
-
+        public double [,] MatrizUsada { get; set; }
         public IngresoDePuntos()
         {
             InitializeComponent();
@@ -28,13 +28,14 @@ namespace UserInterface.Regresión
         {
             TransferenciaCantidadDePuntos owner = this.Owner as TransferenciaCantidadDePuntos;
             Cantidad = owner.RetornarCantidad();
-            Metodo =  owner.RetornarMetodo();
+            Metodo = owner.RetornarMetodo();
 
             dataGridView1.ColumnCount = 2;
             dataGridView1.RowCount = Cantidad;
 
             dataGridView1.Columns[0].HeaderText = "X";
             dataGridView1.Columns[1].HeaderText = "Y";
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -61,23 +62,42 @@ namespace UserInterface.Regresión
                     }
                 }
             }
+            MatrizUsada = Matriz;
             Regresion nuevaRegresion = new Regresion();
 
             if (Metodo == "Regresión Lineal por mínimos cuadrados ")
             {
+
+
                 ResultadoRegresion nuevoResultado = new ResultadoRegresion();
                 nuevoResultado = nuevaRegresion.CalcularRegresionLineal(Matriz, Cantidad);
 
                 MessageBox.Show("El termino independiente es: "+nuevoResultado.Resultadoa0 + ", su coeficiente es: "+nuevoResultado.Resultadoa1+", y su coeficiente de correlacion es: " + nuevaRegresion.CoefienteCorrelacion(Matriz, Cantidad, nuevoResultado.Resultados));
             }
             else
-            {
-                var nuevoResultado = nuevaRegresion.CalcularRegrecionPolinomial(Matriz, Cantidad, 2);
-                ResultadosRegresion = nuevoResultado.Resultados;
-                CoeficienteCorrelacion = nuevaRegresion.CoefienteCorrelacion(Matriz, Cantidad, nuevoResultado.Resultados);
-                ResultadosRegresion nuevoResultadoRegresion = new Regresión.ResultadosRegresion();
-                nuevoResultadoRegresion.Owner = this;
-                nuevoResultadoRegresion.Show();
+            { 
+                if (Metodo == "Regresión Polinomial por mínimos cuadrados")
+                {
+                  
+
+                    var nuevoResultado = nuevaRegresion.CalcularRegrecionPolinomial(Matriz, Cantidad, 2);
+                    ResultadosRegresion = nuevoResultado.Resultados;
+                    CoeficienteCorrelacion = nuevaRegresion.CoefienteCorrelacion(Matriz, Cantidad, nuevoResultado.Resultados);
+                    ResultadosRegresion nuevoResultadoRegresion = new Regresión.ResultadosRegresion();
+                    nuevoResultadoRegresion.Owner = this;
+                    nuevoResultadoRegresion.Show();
+                }
+                else
+                {
+                    NumeroAInterpolar interpolar = new NumeroAInterpolar();
+                    interpolar.Owner = this;
+                    interpolar.Show();
+
+
+
+
+                }
+              
             }           
         }
 
@@ -89,6 +109,16 @@ namespace UserInterface.Regresión
         public double RetorniarCoeficiente()
         {
             return CoeficienteCorrelacion;
+        }
+
+        public double[,] PasarDatos()
+        {
+            return MatrizUsada;
+        }
+
+        public int PasarPuntos()
+        {
+            return Cantidad;
         }
     }
 }

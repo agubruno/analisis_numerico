@@ -41,5 +41,10 @@ namespace UserInterface.Regresión
 
             textBox1.Text = Coeficiente.ToString();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

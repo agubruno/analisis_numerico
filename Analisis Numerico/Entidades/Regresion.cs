@@ -165,5 +165,38 @@ namespace Entidades
             return nuevoResultado;
         }
 
+        public double CalcularLagrange(double[,] Coordenas, int CantidadPuntos, double numero)
+        {
+
+
+            double[] Vector = new double[CantidadPuntos];
+            double Polinomio = 0;
+
+
+            for (int i = 0; i < CantidadPuntos + 1; i++)
+            {
+
+                for (int j = 0; j < CantidadPuntos; j++)
+                {
+                    if (i != j)
+                    {
+                        Polinomio = Polinomio + ((numero - Coordenas[j, 0]) / Coordenas[i, 0] - Coordenas[i, j]);
+                    }
+                }
+                Polinomio = Polinomio + Polinomio * Coordenas[i, 1];
+                Vector[i] = Polinomio;
+
+            }
+
+            double sumaTotal = 0;
+
+            for (int i = 0; i < CantidadPuntos; i++)
+            {
+                sumaTotal = sumaTotal + Vector[i];
+            }
+
+            return sumaTotal;
+        }
+
     }
 }

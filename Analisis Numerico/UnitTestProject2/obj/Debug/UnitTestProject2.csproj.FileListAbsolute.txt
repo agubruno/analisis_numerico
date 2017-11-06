@@ -15,3 +15,6 @@ C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_nume
 C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\UnitTestProject2\obj\Debug\UnitTestProject2.csprojResolveAssemblyReference.cache
 C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\UnitTestProject2\obj\Debug\UnitTestProject2.dll
 C:\Users\agubr\Documents\Materias de la facultad\Analisis numerico\analisis_numerico\Projecto raices\Entidades\UnitTestProject2\obj\Debug\UnitTestProject2.pdb
+C:\Demo\analisis_numerico\Analisis Numerico\UnitTestProject2\obj\Debug\UnitTestProject2.csprojResolveAssemblyReference.cache
+C:\Demo\analisis_numerico\Analisis Numerico\UnitTestProject2\obj\Debug\UnitTestProject2.dll
+C:\Demo\analisis_numerico\Analisis Numerico\UnitTestProject2\obj\Debug\UnitTestProject2.pdb

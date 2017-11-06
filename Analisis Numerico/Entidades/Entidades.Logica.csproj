@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DeterminanteMatriz.cs" />
+    <Compile Include="IteracionNumerica.cs" />
     <Compile Include="Raiz.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Regresion.cs" />

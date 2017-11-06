@@ -1,4 +1,4 @@
-﻿//using org.mariuszgromada.math.mxparser;
+﻿using org.mariuszgromada.math.mxparser;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,16 +19,16 @@ namespace Entidades.Logica
     {
         public double Funcion(string f, double x)
         {
-            //Function funcion = new Function(f);
+            Function funcion = new Function(f);
 
-            //string argumento = "x = "+Convert.ToString(x).Replace(',','.');
+            string argumento = "x = " + Convert.ToString(x).Replace(',', '.');
 
-            //Argument argument = new Argument(argumento);
+            Argument argument = new Argument(argumento);
 
-            //Expression r = new Expression("f(x)", funcion, argument);
+            Expression r = new Expression("f(x)", funcion, argument);
 
-            double a=0;
-            //var a = r.calculate();
+            double a = 0;
+            var a = r.calculate();
 
             return a;
         }
@@ -38,7 +38,7 @@ namespace Entidades.Logica
             double er = 0;
             ResultadoRaiz resultado = new ResultadoRaiz();
             int c = 0;
-            double multiplicacion = Funcion(funcion,xi) * Funcion(funcion,xd);
+            double multiplicacion = Funcion(funcion, xi) * Funcion(funcion, xd);
             double xr = 0;
             double xant = 0;
 
@@ -48,7 +48,7 @@ namespace Entidades.Logica
                 resultado.Error = 0;
                 resultado.PosibleCalcularRaiz = true;
 
-                if (Funcion(funcion,xi) == 0)
+                if (Funcion(funcion, xi) == 0)
                 {
                     resultado.ValorRaiz = xi;
                 }
@@ -70,13 +70,13 @@ namespace Entidades.Logica
                 xr = (xi + xd) / 2;
                 er = Math.Abs((xr - xant) / xr);
                 double calculoaux = Math.Abs(Funcion(funcion, xr));
-                while ((c+1 <= iteracciones) && (calculoaux > tole) && (er > tole))
+                while ((c + 1 <= iteracciones) && (calculoaux > tole) && (er > tole))
                 {
                     calculoaux = Math.Abs(Funcion(funcion, xr));
                     xr = (xi + xd) / 2;
                     er = Math.Abs((xr - xant) / xr);
 
-                    multiplicacion = Funcion(funcion,xi) * Funcion(funcion, xr);
+                    multiplicacion = Funcion(funcion, xi) * Funcion(funcion, xr);
                     if (multiplicacion > 0)
                     {
                         xi = xr;
@@ -133,15 +133,15 @@ namespace Entidades.Logica
             if (multiplicacion < 0)
             {
                 resultado.PosibleCalcularRaiz = true;
-                xr = (Funcion(funcion, xd) *xi - Funcion(funcion, xi)*xd) / (Funcion (funcion, xd) - Funcion (funcion, xi));
+                xr = (Funcion(funcion, xd) * xi - Funcion(funcion, xi) * xd) / (Funcion(funcion, xd) - Funcion(funcion, xi));
                 er = Math.Abs((xr - xant) / xr);
-                while ((c + 1 <= iteracciones) && (Math.Abs(Funcion(funcion,xr)) > tole) && (er > tole))
+                while ((c + 1 <= iteracciones) && (Math.Abs(Funcion(funcion, xr)) > tole) && (er > tole))
                 {
                     xr = (Funcion(funcion, xd) * xi - Funcion(funcion, xi) * xd) / (Funcion(funcion, xd) - Funcion(funcion, xi));
 
                     er = Math.Abs((xr - xant) / xr);
 
-                    multiplicacion = Funcion(funcion,xi) * Funcion(funcion,xr);
+                    multiplicacion = Funcion(funcion, xi) * Funcion(funcion, xr);
                     if (multiplicacion > 0)
                     {
                         xi = xr;
@@ -163,28 +163,28 @@ namespace Entidades.Logica
             return resultado;
         }
 
-        public ResultadoRaiz CalcularRaizTangente(double xi,  int iteracciones, double tole, string funcion)
+        public ResultadoRaiz CalcularRaizTangente(double xi, int iteracciones, double tole, string funcion)
         {
             double er = 0;
             ResultadoRaiz resultado = new ResultadoRaiz();
             int c = 0;
-            
+
             double xr = 0;
             double xant = 0;
-                
-            if (Funcion(funcion,xi) == 0)
+
+            if (Funcion(funcion, xi) == 0)
             {
                 resultado.Iteraciones = c;
                 resultado.Error = 0;
                 resultado.ValorRaiz = xi;
                 resultado.PosibleCalcularRaiz = true;
-               
+
                 return resultado;
             }
 
-            else 
+            else
             {
-                double casiderivada = (Funcion(funcion, xi + tole) - Funcion(funcion, xi)) / tole; 
+                double casiderivada = (Funcion(funcion, xi + tole) - Funcion(funcion, xi)) / tole;
                 if (casiderivada == 0)
                 {
                     resultado.PosibleCalcularRaiz = false;
@@ -193,13 +193,13 @@ namespace Entidades.Logica
                 {
                     resultado.PosibleCalcularRaiz = true;
                     xr = xi - (Funcion(funcion, xi) / casiderivada);
-                    er = Math.Abs((xr - xant) / xr );
+                    er = Math.Abs((xr - xant) / xr);
                     double calculoaux = Math.Abs(Funcion(funcion, xr));
                     while ((c + 1 <= iteracciones) && (calculoaux > tole) && (er > tole))
                     {
                         xr = xi - (Funcion(funcion, xi) / casiderivada);
-                        er = Math.Abs((xr - xant) / xr );
-                        
+                        er = Math.Abs((xr - xant) / xr);
+
                         xant = xr;
                         c = c + 1;
                         xi = xr;
@@ -210,9 +210,9 @@ namespace Entidades.Logica
                     resultado.Iteraciones = c;
                     resultado.Error = er;
                 }
-                
+
             }
-            
+
             return resultado;
         }
 
@@ -255,23 +255,23 @@ namespace Entidades.Logica
                 else
                 {
                     resultado.PosibleCalcularRaiz = true;
-                    xr = ((Funcion (funcion, xi) * xd) - (Funcion(funcion, xd) * xi) )/ divisor;
+                    xr = ((Funcion(funcion, xi) * xd) - (Funcion(funcion, xd) * xi)) / divisor;
                     er = Math.Abs((xr - xant) / xr);
                     c = c + 1;
-        
+
                     double calculoaux = Math.Abs(Funcion(funcion, xr));
-                    while ((c+1 <= iteracciones) && (calculoaux > tole) && (er > tole))
+                    while ((c + 1 <= iteracciones) && (calculoaux > tole) && (er > tole))
                     {
                         xr = ((Funcion(funcion, xi) * xd) - (Funcion(funcion, xd) * xi)) / divisor;
                         er = Math.Abs((xr - xant) / xr);
-                        
+
                         xant = xr;
                         c = c + 1;
                         xd = xi;
                         xi = xr;
 
                         divisor = Funcion(funcion, xi) - Funcion(funcion, xd);
-                        if (divisor == 0 )
+                        if (divisor == 0)
                         {
                             resultado.PosibleCalcularRaiz = false;
                             break;
