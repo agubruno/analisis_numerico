@@ -89,18 +89,18 @@ namespace Entidades
             double h = (vd - vi) / CantidadIntervalos;
             double calculoIntermedio = 0;
             double xi = vi;
-            for (int i = 1; i < (CantidadIntervalos / 2); i = i + 2)
+            for (int i = 1; i < CantidadIntervalos -1; i = i + 2)
             {
-                xi = vi + 2 * h;
+                xi = xi + (2 * h);
                 calculoIntermedio = calculoIntermedio + Funcion(funcion, xi);
             }
             superficie = superficie + (4 * calculoIntermedio);
             calculoIntermedio = 0;
-            xi = vi + 2 * h;
-            for (int i = 2; i < (CantidadIntervalos / 2) - 1; i = i + 2)
+            xi = vi + h;
+            for (int i = 2; i < CantidadIntervalos - 1; i = i + 2)
             {
-                xi = vi + 2 * h;
                 calculoIntermedio = calculoIntermedio + Funcion(funcion, xi);
+                xi = xi +( 2 * h);
             }
             superficie = superficie + (4 * calculoIntermedio);
 
