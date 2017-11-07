@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-   public class IteracionNumericaClase
+    public class Iteracion_numerica_logica
     {
         public double Funcion(string f, double x)
         {
@@ -19,7 +19,7 @@ namespace Entidades
 
             Expression r = new Expression("f(x)", funcion, argument);
 
-            
+
             var a = r.calculate();
 
             return a;
@@ -57,7 +57,7 @@ namespace Entidades
             double xi = vi + h;
 
             double superficie = Funcion(funcion, vi) + Funcion(funcion, vd) + (4 * Funcion(funcion, xi));
-            
+
             superficie = (h / 3) * superficie;
 
             return superficie;
@@ -68,28 +68,28 @@ namespace Entidades
         {
             double resultado = 0;
 
-            if (CantidadIntervalos%2 == 0)
+            if (CantidadIntervalos % 2 == 0)
             {
                 resultado = CalcularSimpson1_3Multiple(vi, vd, funcion, CantidadIntervalos);
             }
             else
             {
-                resultado = CalcularSimpson1_3Multiple(vi, vd, funcion, CantidadIntervalos-3);
+                resultado = CalcularSimpson1_3Multiple(vi, vd, funcion, CantidadIntervalos - 3);
                 resultado = resultado + CalcularSimpson3_8Simple(vi, vd, funcion, CantidadIntervalos);
             }
 
             return resultado;
         }
-        
 
 
-        public double CalcularSimpson1_3Multiple (double vi, double vd, string funcion, int CantidadIntervalos)
+
+        public double CalcularSimpson1_3Multiple(double vi, double vd, string funcion, int CantidadIntervalos)
         {
             double superficie = Funcion(funcion, vi) + Funcion(funcion, vd);
             double h = (vd - vi) / CantidadIntervalos;
             double calculoIntermedio = 0;
             double xi = vi;
-            for (int i = 1; i <(CantidadIntervalos/2); i = i + 2)
+            for (int i = 1; i < (CantidadIntervalos / 2); i = i + 2)
             {
                 xi = vi + 2 * h;
                 calculoIntermedio = calculoIntermedio + Funcion(funcion, xi);
@@ -97,7 +97,7 @@ namespace Entidades
             superficie = superficie + (4 * calculoIntermedio);
             calculoIntermedio = 0;
             xi = vi + 2 * h;
-            for (int i = 2; i < (CantidadIntervalos/2) -1; i = i +2)
+            for (int i = 2; i < (CantidadIntervalos / 2) - 1; i = i + 2)
             {
                 xi = vi + 2 * h;
                 calculoIntermedio = calculoIntermedio + Funcion(funcion, xi);
@@ -113,7 +113,7 @@ namespace Entidades
         public double CalcularSimpson3_8Simple(double vi, double vd, string funcion, int CantidadIntervalos)
         {
             double h = (vd - vi) / CantidadIntervalos;
-            double superficie = Funcion(funcion, vd - 3 * h) + (3*Funcion(funcion, vd - 2 * h)) + (3*Funcion(funcion, vd - h)) + Funcion(funcion, vd);
+            double superficie = Funcion(funcion, vd - 3 * h) + (3 * Funcion(funcion, vd - 2 * h)) + (3 * Funcion(funcion, vd - h)) + Funcion(funcion, vd);
 
 
 

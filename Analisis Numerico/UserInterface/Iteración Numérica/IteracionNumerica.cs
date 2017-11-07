@@ -22,7 +22,7 @@ namespace UserInterface.Iteración_Numérica
         {
             if (maskedTextBox1.Text != "" && maskedTextBox2.Text != "")
             {
-                IteracionNumericaClase nuevaIteracion = new IteracionNumericaClase();
+                Iteracion_numerica_logica nuevaIteracion = new Iteracion_numerica_logica();
                 double resultado;
                 switch (comboBox1.Text)
                 {
