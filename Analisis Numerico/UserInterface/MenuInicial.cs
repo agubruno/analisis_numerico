@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using UnitTestProject2;
+using UserInterface.Iteración_Numérica;
 using UserInterface.Regresión;
 
 namespace UserInterface
@@ -40,6 +41,13 @@ namespace UserInterface
             TiposRegresiones nuevoTipo = new TiposRegresiones();
             nuevoTipo.Owner = this;
             nuevoTipo.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            IteracionNumerica nuevaIteracion = new IteracionNumerica();
+            nuevaIteracion.Owner = this;
+            nuevaIteracion.Show();
         }
     }
 }

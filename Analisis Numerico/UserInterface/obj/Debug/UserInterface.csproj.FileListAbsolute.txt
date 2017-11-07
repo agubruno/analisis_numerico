@@ -183,7 +183,6 @@ C:\Demo\analisis_numerico\Analisis Numerico\UserInterface\bin\Debug\Entidades.dl
 C:\Demo\analisis_numerico\Analisis Numerico\UserInterface\bin\Debug\MathParser.org-mXparser.Net452.dll
 C:\Demo\analisis_numerico\Analisis Numerico\UserInterface\bin\Debug\Entidades.pdb
 C:\Users\agubr\Documents\GitHub\Analisis Numerico\analisis_numerico\Analisis Numerico\UserInterface\obj\Debug\UserInterface.csprojResolveAssemblyReference.cache
-C:\Users\agubr\Documents\GitHub\Analisis Numerico\analisis_numerico\Analisis Numerico\UserInterface\obj\Debug\UserInterface.Iteración_Numérica._.resources
 C:\Users\agubr\Documents\GitHub\Analisis Numerico\analisis_numerico\Analisis Numerico\UserInterface\obj\Debug\UserInterface.Form1.resources
 C:\Users\agubr\Documents\GitHub\Analisis Numerico\analisis_numerico\Analisis Numerico\UserInterface\obj\Debug\UserInterface.Form2.resources
 C:\Users\agubr\Documents\GitHub\Analisis Numerico\analisis_numerico\Analisis Numerico\UserInterface\obj\Debug\UserInterface.Form3.resources
@@ -199,3 +198,10 @@ C:\Users\agubr\Documents\GitHub\Analisis Numerico\analisis_numerico\Analisis Num
 C:\Users\agubr\Documents\GitHub\Analisis Numerico\analisis_numerico\Analisis Numerico\UserInterface\obj\Debug\UserInterface.csproj.GenerateResource.Cache
 C:\Users\agubr\Documents\GitHub\Analisis Numerico\analisis_numerico\Analisis Numerico\UserInterface\obj\Debug\UserInterface.exe
 C:\Users\agubr\Documents\GitHub\Analisis Numerico\analisis_numerico\Analisis Numerico\UserInterface\obj\Debug\UserInterface.pdb
+C:\Users\agubr\Documents\GitHub\Analisis Numerico\analisis_numerico\Analisis Numerico\UserInterface\bin\Debug\UserInterface.exe.config
+C:\Users\agubr\Documents\GitHub\Analisis Numerico\analisis_numerico\Analisis Numerico\UserInterface\bin\Debug\UserInterface.exe
+C:\Users\agubr\Documents\GitHub\Analisis Numerico\analisis_numerico\Analisis Numerico\UserInterface\bin\Debug\UserInterface.pdb
+C:\Users\agubr\Documents\GitHub\Analisis Numerico\analisis_numerico\Analisis Numerico\UserInterface\bin\Debug\Entidades.dll
+C:\Users\agubr\Documents\GitHub\Analisis Numerico\analisis_numerico\Analisis Numerico\UserInterface\bin\Debug\MathParser.org-mXparser.Net452.dll
+C:\Users\agubr\Documents\GitHub\Analisis Numerico\analisis_numerico\Analisis Numerico\UserInterface\bin\Debug\Entidades.pdb
+C:\Users\agubr\Documents\GitHub\Analisis Numerico\analisis_numerico\Analisis Numerico\UserInterface\obj\Debug\UserInterface.Iteración_Numérica.IteracionNumerica.resources

@@ -48,11 +48,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Iteración Numérica\IteraciónNumerica.cs">
+    <Compile Include="Iteración Numérica\IteracionNumerica.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Iteración Numérica\.Designer.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Iteración Numérica\IteracionNumerica.Designer.cs">
+      <DependentUpon>IteracionNumerica.cs</DependentUpon>
     </Compile>
     <Compile Include="Raiz\Form1.cs">
       <SubType>Form</SubType>
@@ -128,8 +128,8 @@
     <Compile Include="Sistemas de ecuaciones\SistemasEcuaciones.Designer.cs">
       <DependentUpon>SistemasEcuaciones.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Iteración Numérica\IteraciónNumerica.resx">
-      <DependentUpon>IteraciónNumerica.cs</DependentUpon>
+    <EmbeddedResource Include="Iteración Numérica\IteracionNumerica.resx">
+      <DependentUpon>IteracionNumerica.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Raiz\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -334,5 +334,6 @@
     <Content Include="docs\script.js" />
     <Content Include="docs\stylesheet.css" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

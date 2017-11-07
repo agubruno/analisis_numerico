@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-   public class IteracionNumerica
+   public class IteracionNumericaClase
     {
         public double Funcion(string f, double x)
         {
-            Function funcion = new Function(f);
+            Function funcion = new Function("f(x) = " + f);
 
             string argumento = "x = " + Convert.ToString(x).Replace(',', '.');
 

@@ -27,7 +27,6 @@ namespace Entidades.Logica
 
             Expression r = new Expression("f(x)", funcion, argument);
 
-            double a = 0;
             var a = r.calculate();
 
             return a;
