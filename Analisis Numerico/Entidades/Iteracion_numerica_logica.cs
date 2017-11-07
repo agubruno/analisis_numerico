@@ -74,7 +74,10 @@ namespace Entidades
             }
             else
             {
-                resultado = CalcularSimpson1_3Multiple(vi, vd, funcion, CantidadIntervalos - 3);
+                double h = (vd - vi) / CantidadIntervalos;
+                double vd2 = vd - (3 * h);
+
+                resultado = CalcularSimpson1_3Multiple(vi, vd2, funcion, CantidadIntervalos -3);
                 resultado = resultado + CalcularSimpson3_8Simple(vi, vd, funcion, CantidadIntervalos);
             }
 
@@ -89,19 +92,24 @@ namespace Entidades
             double h = (vd - vi) / CantidadIntervalos;
             double calculoIntermedio = 0;
             double xi = vi;
-            for (int i = 1; i < CantidadIntervalos -1; i = i + 2)
+
+            //-------Sumatoria par
+            for (int i = 2; i <= CantidadIntervalos - 2; i = i + 2)
             {
                 xi = xi + (2 * h);
                 calculoIntermedio = calculoIntermedio + Funcion(funcion, xi);
             }
-            superficie = superficie + (4 * calculoIntermedio);
+            superficie = superficie + (2 * calculoIntermedio);
             calculoIntermedio = 0;
             xi = vi + h;
-            for (int i = 2; i < CantidadIntervalos - 1; i = i + 2)
+
+            //-------Sumatoria impar
+            for (int i = 1; i <= CantidadIntervalos - 1; i = i + 2)
             {
                 calculoIntermedio = calculoIntermedio + Funcion(funcion, xi);
-                xi = xi +( 2 * h);
+                xi = xi + (2 * h);
             }
+
             superficie = superficie + (4 * calculoIntermedio);
 
             superficie = (h / 3) * superficie;
