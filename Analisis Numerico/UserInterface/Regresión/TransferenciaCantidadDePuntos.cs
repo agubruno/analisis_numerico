@@ -10,5 +10,6 @@ namespace UserInterface.Regresión
     {
         int RetornarCantidad();
         string RetornarMetodo();
+        double RetornarNumero();
     }
 }

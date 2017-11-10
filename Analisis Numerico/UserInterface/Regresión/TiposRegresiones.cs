@@ -14,6 +14,7 @@ namespace UserInterface.Regresión
     {
         public int CantidadPuntos { get; set; }
         public string MetodoSeleccionado { get; set; }
+        public double numeroLagrange { get; set; }
 
         public TiposRegresiones()
         {
@@ -31,20 +32,20 @@ namespace UserInterface.Regresión
 
            
             int textoAInt = 0;
+            double textoDouble = 0;
 
             bool result = int.TryParse(texto, out textoAInt);
+            bool result2 = double.TryParse(textBox2.Text, out textoDouble);
 
-            if (result)
+            if (result && result2)
             {
                 CantidadPuntos = textoAInt;
                 MetodoSeleccionado = comboBox1.Text;
-                
+                numeroLagrange = textoDouble;
+
                     IngresoDePuntos IngresoDePuntos = new IngresoDePuntos();
                     IngresoDePuntos.Owner = this;
                     IngresoDePuntos.Show();
-
-                
-
             }
         }
 
@@ -56,6 +57,11 @@ namespace UserInterface.Regresión
         public string RetornarMetodo()
         {
             return MetodoSeleccionado;
+        }
+
+        public double RetornarNumero()
+        {
+            return numeroLagrange;
         }
     }
 }

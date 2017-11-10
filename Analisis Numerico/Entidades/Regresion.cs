@@ -170,33 +170,29 @@ namespace Entidades
 
 
             double[] Vector = new double[CantidadPuntos];
-            double Polinomio = 0;
+            double Numerador = 0;
+            double Denominador = 0;
+            double resultado = 0;
 
 
-            for (int i = 0; i < CantidadPuntos + 1; i++)
+            for (int i = 0; i < CantidadPuntos; i++)
             {
-
+                Numerador =1;
+                Denominador = 1;
                 for (int j = 0; j < CantidadPuntos; j++)
                 {
                     if (i != j)
                     {
-                        Polinomio = Polinomio + ((numero - Coordenas[j, 0]) / Coordenas[i, 0] - Coordenas[i, j]);
+                        Numerador = Numerador * (numero - Coordenas[j, 0]);
+                        Denominador = Denominador * (Coordenas[i, 0] - Coordenas[j, 0]);
                     }
                 }
-                Polinomio = Polinomio + Polinomio * Coordenas[i, 1];
-                Vector[i] = Polinomio;
-
+                resultado = resultado + ((Numerador/Denominador )* Coordenas[i, 1]);
             }
 
-            double sumaTotal = 0;
-
-            for (int i = 0; i < CantidadPuntos; i++)
-            {
-                sumaTotal = sumaTotal + Vector[i];
-            }
-
-            return sumaTotal;
+            return resultado;
         }
+     
 
     }
 }

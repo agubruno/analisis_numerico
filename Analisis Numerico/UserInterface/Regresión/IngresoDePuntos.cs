@@ -18,6 +18,8 @@ namespace UserInterface.Regresión
         public List<double> ResultadosRegresion { get; set; }
         public double CoeficienteCorrelacion { get; set; }
         public double [,] MatrizUsada { get; set; }
+        double numeroLagrange { get; set;}
+
         public IngresoDePuntos()
         {
             InitializeComponent();
@@ -29,6 +31,7 @@ namespace UserInterface.Regresión
             TransferenciaCantidadDePuntos owner = this.Owner as TransferenciaCantidadDePuntos;
             Cantidad = owner.RetornarCantidad();
             Metodo = owner.RetornarMetodo();
+            numeroLagrange = owner.RetornarNumero();
 
             dataGridView1.ColumnCount = 2;
             dataGridView1.RowCount = Cantidad;
@@ -65,7 +68,7 @@ namespace UserInterface.Regresión
             MatrizUsada = Matriz;
             Regresion nuevaRegresion = new Regresion();
 
-            if (Metodo == "Regresión Lineal por mínimos cuadrados ")
+            if (Metodo == "Regresión Lineal por mínimos cuadrados")
             {
 
 
@@ -89,15 +92,15 @@ namespace UserInterface.Regresión
                 }
                 else
                 {
-                    NumeroAInterpolar interpolar = new NumeroAInterpolar();
-                    interpolar.Owner = this;
-                    interpolar.Show();
+
+                    var nuevoResultado = nuevaRegresion.CalcularLagrange(Matriz, Cantidad, numeroLagrange);
+                    MessageBox.Show("El valor correspondiente cuando x= " + numeroLagrange + " es: " + nuevoResultado + ", a traves del metodo de Lagrange");
 
 
 
 
                 }
-              
+
             }           
         }
 
