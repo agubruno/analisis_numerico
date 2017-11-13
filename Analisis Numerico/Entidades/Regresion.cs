@@ -48,16 +48,7 @@ namespace Entidades
                 calculoPrevio = 0;
 
             }
-
-
-
-
-
-            //for (int i = 0; i < cantidadPuntos; i++)
-            //{
-            //    promedioY = promedioY + coordenadas[i, 1];
-            //    sr = sr + Math.Pow((coordenadas[i, 1] - a1 * coordenadas[i, 0] - a0 ), 2);
-            //}
+            
             promedioY = promedioY / cantidadPuntos;
 
             for (int i = 0; i < cantidadPuntos; i++)
@@ -149,13 +140,14 @@ namespace Entidades
 
         }
 
+        // Determina si se tiene que ser calculando o el coeficiente indica que la funcion representa bien los puntos.
         public ResultadoRegresion CalcularRegrecionPolinomial(double[,] coordenadas, int cantidadPuntos, int gradoCurba)
         {
             var nuevoResultado =CalcularRegresionPolimonialInterno(coordenadas, cantidadPuntos, gradoCurba);
 
             var coeficiente = CoefienteCorrelacion(coordenadas, cantidadPuntos, nuevoResultado.Resultados);
 
-            while (coeficiente < 85)
+            while (coeficiente < 90)
             {
                 gradoCurba = gradoCurba + 1;
                 nuevoResultado = CalcularRegresionPolimonialInterno(coordenadas, cantidadPuntos, gradoCurba);
